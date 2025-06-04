@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile Page</title>
+  <style>
+    body {
+      background-color: white;
+      font-family: Georgia, serif;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      background-color: #e0f7ff;
+      width: 600px;
+      padding: 30px;
+      margin: 40px;
+    }
+    h1 {
+      text-align: center;
+      color: darkblue;
+      font-size: 28px;
+    }
+    .profile {
+      text-align: center;
+    }
+    .profile img {
+      width: 150px;
+      border-radius: 8px;
+    }
+    .profile p {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #222;
+    }
+    .hello-button {
+      background-color: #ffe4b5;
+      border: 1px solid #999;
+      padding: 8px 16px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .contact-section {
+      margin-top: 30px;
+    }
+    .contact-section h2 {
+      color: darkblue;
+      font-size: 22px;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      margin-top: 15px;
+      background-color: #ffe4b5;
+      border: 1px solid #999;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Profile Page</h1>
+
+    <div class="profile">
+      <img src="pic.jpeg" alt="pic">
+      <p>My name is Aditi. I am pursuing my B.Tech in Electronics and communication. I love painting and drawing in my free time.</p>
+      <button class="hello-button" onclick="sayHello()">Say Hello</button>
+    </div>
+
+    <div class="contact-section">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function sayHello() {
+      alert("Hello, Aditi!");
+    }
+  </script>
+</body>
+</html>
